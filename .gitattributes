@@ -1,0 +1,54 @@
+# Normalize line endings
+* text=auto
+
+# C# diff
+*.cs diff=csharp
+
+# Macro: Unity yaml files
+[attr]unity-yaml-file text eol=lf merge=unityyamlmerge linguist-generated
+
+# Unity yaml files
+*.asmdef unity-yaml-file -linguist-generated
+*.anim unity-yaml-file
+*.asset unity-yaml-file
+*.brush unity-yaml-file
+*.controller unity-yaml-file
+*.flare unity-yaml-file
+*.fontsettings unity-yaml-file
+*.giparams unity-yaml-file
+*.guiskin unity-yaml-file
+*.mask unity-yaml-file
+*.mat unity-yaml-file
+*.meta unity-yaml-file
+*.mixer unity-yaml-file
+*.overrideController unity-yaml-file
+*.physicMaterial unity-yaml-file
+*.physicsMaterial2D unity-yaml-file
+*.playable unity-yaml-file
+*.preset unity-yaml-file
+*.renderTexture unity-yaml-file
+*.shadervariants unity-yaml-file
+*.spriteatlas unity-yaml-file
+*.terrainlayer unity-yaml-file
+*.unity unity-yaml-file
+
+# Shader/cginc
+*.cginc text eol=lf
+*.shader text eol=lf
+
+# Binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.bmp binary
+*.tga binary
+*.tiff binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.fbx binary
+*.blend binary
