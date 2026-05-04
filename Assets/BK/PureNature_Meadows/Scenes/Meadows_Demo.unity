@@ -4212,7 +4212,7 @@ GameObject:
   - component: {fileID: 330960676}
   - component: {fileID: 330960675}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: Terrain_Optimized
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4236,7 +4236,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 95e756993ed44452aba69bd5e7f0e952, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b8d6dbd7136106a469371e9044ee8755, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &330960676
 Terrain:
@@ -4247,7 +4247,7 @@ Terrain:
   m_GameObject: {fileID: 330960674}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 95e756993ed44452aba69bd5e7f0e952, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b8d6dbd7136106a469371e9044ee8755, type: 2}
   m_TreeDistance: 200
   m_TreeBillboardDistance: 150
   m_TreeCrossFadeLength: 5
@@ -27440,6 +27440,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 578016793152811962, guid: f15e384a7be34df0bd7e1c100d05939f,
         type: 3}
+      propertyPath: Altitude
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 578016793152811962, guid: f15e384a7be34df0bd7e1c100d05939f,
+        type: 3}
+      propertyPath: volumeSamples
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 578016793152811962, guid: f15e384a7be34df0bd7e1c100d05939f,
+        type: 3}
       propertyPath: renderDistance
       value: 100
       objectReference: {fileID: 0}
@@ -27448,6 +27458,11 @@ PrefabInstance:
       propertyPath: directionalLight
       value: 
       objectReference: {fileID: 909426331}
+    - target: {fileID: 578016793152811962, guid: f15e384a7be34df0bd7e1c100d05939f,
+        type: 3}
+      propertyPath: overrideCloudColor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 578016793152811963, guid: f15e384a7be34df0bd7e1c100d05939f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27502,6 +27517,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 578016793152811965, guid: f15e384a7be34df0bd7e1c100d05939f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
