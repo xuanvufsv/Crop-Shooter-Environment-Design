@@ -394,7 +394,11 @@ Shader "BK/Billboards"
 				    OUTPUT_SH4( ase_worldPos, ase_worldNormal, GetWorldSpaceNormalizeViewDir( ase_worldPos ), output.lightmapUVOrVertexSH.xyz, output.probeOcclusion );
 				#endif
 				#else
-				OUTPUT_SH4( ase_worldPos, ase_worldNormal, GetWorldSpaceNormalizeViewDir( ase_worldPos ), output.lightmapUVOrVertexSH.xyz );
+				#if UNITY_VERSION >= 60000000
+				    OUTPUT_SH4( ase_worldPos, ase_worldNormal, GetWorldSpaceNormalizeViewDir( ase_worldPos ), output.lightmapUVOrVertexSH.xyz );
+				#else
+				    OUTPUT_SH( ase_worldNormal, output.lightmapUVOrVertexSH.xyz );
+				#endif
 				#endif
 				float3 ase_worldTangent = TransformObjectToWorldDir(input.ase_tangent.xyz);
 				output.ase_texcoord6.xyz = ase_worldTangent;
