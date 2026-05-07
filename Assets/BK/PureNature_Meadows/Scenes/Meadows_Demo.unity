@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.5659388, g: 0.61006284, b: 0.61006284, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.15
+  m_AmbientIntensity: 1.25
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.47051144, g: 0.53033453, b: 0.5754717, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: b811e57e54c34ecf85a514a97090bac2, type: 2}
@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 256
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -12250,7 +12250,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -12259,7 +12259,7 @@ Light:
     m_Type: 1
     m_Resolution: 3
     m_CustomResolution: -1
-    m_Strength: 0.75
+    m_Strength: 0.5
     m_Bias: 0.25
     m_NormalBias: 0.25
     m_NearPlane: 0.2
